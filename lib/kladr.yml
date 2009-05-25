@@ -1,0 +1,24 @@
+index:
+    text: Индекс
+    method: ind
+
+region:
+    text: Регион
+    method: idreg
+
+area:
+    text: Район
+    method: idarea
+
+town:
+    text: Город
+    method: idtown
+
+settl:
+    text: Населенный пункт
+    method: idsettl
+
+# street:
+#     text: Улица
+#     method: idtown
+
