@@ -29,12 +29,8 @@ module ActsAsAddress
       end
       
       def write(index, param)
-        @address = [] if @address.nil?
-        @address[index] = if param then
-                          param.gsub(",",".")
-                        else
-                          ""
-                          end
+        @address ||= []
+        @address[index] = param ? param.gsub(",",".") : ""
         @model.send("#{@field}=", self.to_s)
       end
       
